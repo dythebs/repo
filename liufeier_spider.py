@@ -14,9 +14,8 @@ def get_filename_from_href(href) :
 
 def get_a_pic(href,dirname):
     content = requests.get(href).content
-    fp = open(os.path.join(dir,dirname,get_filename_from_href(href)), 'wb')
-    fp.write(content)
-    fp.close()
+    with open(os.path.join(dir,dirname,get_filename_from_href(href)), 'wb') as fp:
+        fp.write(content)
 
 
 def check_exists(dirname):
