@@ -9,6 +9,6 @@ soup = BeautifulSoup(html, "html.parser")
 images = soup.find_all('div', class_='img-holder')
 for image in images:
 	image_url = image.a.img['src']
-	with open(image_url.split('/')[-1],'wb') as fp:
+	with open(image_url.split('/')[-1], 'wb') as fp:
 		image_content = requests.get(image_url).content
 		fp.write(image_content)
