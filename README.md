@@ -16,5 +16,6 @@
 ├── paper_spider          //爬aminer和google scholar对应作者的文章
 ├── LICENSE               //随便加的,觉得挺好玩的
 ├── liufeier_spider.py    //下载刘飞儿
-└── README.md
+├── README.md
+└── kinetics-dl.py        //下载kinetics数据集
 ```
